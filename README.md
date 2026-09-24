@@ -3,6 +3,7 @@
 Analysis of global vaccination coverage, disease incidence, and vaccine introduction trends using WHO/UNICEF datasets — cleaned in Python, stored in a normalized SQL database, and explored through an interactive dashboard.
 
 Domain: Public Health & Epidemiology 
+
 Skills: Python (Pandas, EDA), SQL (Database Design), Data Visualization (Streamlit/Plotly)
 
 ---
@@ -46,10 +47,15 @@ DS-Vaccination-Project/
 Five source tables (WHO/UNICEF vaccination data):
 
 Table	                                       Records	                                                                      Description
+
 Coverage data	                               ~400K	                                                         Vaccination coverage % by country, year, antigen
+
 Incidence rate data	                          ~85K	                                                        Disease incidence rate by country, year, disease
+
 Reported cases data	                          ~85K	                                                                   Raw disease case counts
+
 Vaccine introduction data	                    ~138K	                                                             National vaccine introduction status/year
+
 Vaccine schedule data	                         ~8K	                                                        National dosing schedules and target populations
 
 ---
@@ -135,5 +141,6 @@ Full question-by-question analysis: (https://drive.google.com/file/d/1HOau1Qd3FL
 ---
 # ***⚠️ Known Limitations***
 1.No gender, education level, urban/rural, or population density fields exist in the source data — related brief questions are documented as not answerable with this dataset.
+
 2.vaccine_introduction / vaccine_schedule vaccine names are stored as free text rather than a foreign key, due to inconsistent naming conventions vs. the coverage table's antigen codes.
 
