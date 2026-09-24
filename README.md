@@ -102,7 +102,7 @@ Run locally via Streamlit:
 
 ### 4. Launch the dashboard:
 ```bash
-   streamlit run dashboard.py
+   streamlit run notebooks/dashboard.py
 ```
    ---
 # ***🔍 Key Insights***
