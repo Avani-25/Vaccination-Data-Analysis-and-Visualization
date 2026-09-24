@@ -8,7 +8,7 @@ Domain: Public Health & Epidemiology Skills: Python (Pandas, EDA), SQL (Database
 
 This project analyzes global vaccination data to understand trends in vaccination coverage, disease incidence, and effectiveness. Raw WHO/UNICEF data was cleaned and normalized, stored in a relational SQL database, and visualized through an interactive dashboard to surface insights for public health strategy, disease prevention, and resource allocation.
 
-# **🛠️ Tech Stack**
+# ***🛠️ Tech Stack***
 Python — pandas, numpy, openpyxl (data cleaning & EDA)
 SQL — PostgreSQL (relational database, normalized schema)
 SQLAlchemy / psycopg2 — Python–database connectivity
