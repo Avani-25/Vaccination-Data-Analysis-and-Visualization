@@ -12,9 +12,13 @@ This project analyzes global vaccination data to understand trends in vaccinatio
 ---
 # ***🛠️ Tech Stack***
 Python — pandas, numpy, openpyxl (data cleaning & EDA)
+
 SQL — PostgreSQL (relational database, normalized schema)
+
 SQLAlchemy / psycopg2 — Python–database connectivity
+
 Matplotlib / Seaborn — exploratory data analysis visualizations
+
 Streamlit + Plotly — interactive dashboard (filters, KPI cards, trend lines, choropleth map, scatter plots)
 
 ---
@@ -69,43 +73,51 @@ Primary/foreign keys enforced for referential integrity
 
 Run locally via Streamlit:
 
-Filters: WHO Region, Vaccine, Year Range
-KPI cards: total records, average coverage %, % of records ≥95% coverage
-Trend line: global vaccination coverage over time
-Choropleth map: coverage by country
-Scatter plot: coverage vs. disease incidence correlation
-Bar charts: top/bottom 10 countries by average coverage
+1.Filters: WHO Region, Vaccine, Year Range
+
+2.KPI cards: total records, average coverage %, % of records ≥95% coverage
+
+3.Trend line: global vaccination coverage over time
+
+4.Choropleth map: coverage by country
+
+5.Scatter plot: coverage vs. disease incidence correlation
+
+6.Bar charts: top/bottom 10 countries by average coverage
 
 ---
 # ***🚀 Setup & Usage***
-1. Clone the repo and install dependencies:
-bash
+### 1. Clone the repo and install dependencies:
+```bash
    pip install -r requirements.txt
-
-2. Set up PostgreSQL and create a database named vaccination_db.
-3. Run the cleaning notebook (notebooks/eda_analysis.ipynb) to generate cleaned CSVs in data/cleaned/.
-4. Create the schema and load data:
-bash
+```
+### 2. Set up PostgreSQL and create a database named vaccination_db.
+### 3. Run the cleaning notebook (notebooks/eda_analysis.ipynb) to generate cleaned CSVs in data/cleaned/.
+### 4. Create the schema and load data:
+```bash
    python notebooks/SQL_database.py
    python notebooks/load_data.py
+```
+#### (Update the database password in both files before running.)
 
-(Update the database password in both files before running.)
-
-4. Launch the dashboard:
-bash
+### 4. Launch the dashboard:
+```bash
    streamlit run dashboard.py
-
+```
    ---
 # ***🔍 Key Insights***
-Global average vaccination coverage rose from ~45% (1980) to ~80% (mid-2000s), with dips around 2010 and 2020 (COVID-19 disruption).
-Coverage and disease incidence show a negative correlation (-0.19), strongest for measles and pertussis.
-Global measles coverage (87.6%) remains 7.4 points below WHO's 95%-by-2030 target.
-Polio cases fell ~98.9% comparing 1980–90 vs. 2015–23 averages — the largest reduction of any disease tracked.
+1.Global average vaccination coverage rose from ~45% (1980) to ~80% (mid-2000s), with dips around 2010 and 2020 (COVID-19 disruption).
+
+2.Coverage and disease incidence show a negative correlation (-0.19), strongest for measles and pertussis.
+
+3.Global measles coverage (87.6%) remains 7.4 points below WHO's 95%-by-2030 target.
+
+4.Polio cases fell ~98.9% comparing 1980–90 vs. 2015–23 averages — the largest reduction of any disease tracked.
 
 Full question-by-question analysis: docs/Vaccination_Project_Question_Answers.pdf
 
 ---
 # ***⚠️ Known Limitations***
-No gender, education level, urban/rural, or population density fields exist in the source data — related brief questions are documented as not answerable with this dataset.
-vaccine_introduction / vaccine_schedule vaccine names are stored as free text rather than a foreign key, due to inconsistent naming conventions vs. the coverage table's antigen codes.
+1.No gender, education level, urban/rural, or population density fields exist in the source data — related brief questions are documented as not answerable with this dataset.
+2.vaccine_introduction / vaccine_schedule vaccine names are stored as free text rather than a foreign key, due to inconsistent naming conventions vs. the coverage table's antigen codes.
 
