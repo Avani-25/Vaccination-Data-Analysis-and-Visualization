@@ -114,7 +114,16 @@ Run locally via Streamlit:
 
 4.Polio cases fell ~98.9% comparing 1980–90 vs. 2015–23 averages — the largest reduction of any disease tracked.
 
-Full question-by-question analysis: docs/Vaccination_Project_Question_Answers.pdf
+Full question-by-question analysis: (https://drive.google.com/file/d/1HOau1Qd3FL9LXwGntz2bILKScLKKgjgn/view?usp=drive_link)
+
+---
+# ***📑Project Report***
+
+(https://drive.google.com/file/d/1PPGMF7AaCc7XuHyREzFa2JAcu10HOrQq/view?usp=drive_link)
+
+# ***📽Project Demo***
+
+(https://drive.google.com/file/d/1wlKPmj-hQvF2Kc6l8IZYgb3iWaGGl52l/view?usp=drive_link)
 
 ---
 # ***⚠️ Known Limitations***
