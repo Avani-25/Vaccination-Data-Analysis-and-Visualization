@@ -2,7 +2,8 @@
 
 Analysis of global vaccination coverage, disease incidence, and vaccine introduction trends using WHO/UNICEF datasets — cleaned in Python, stored in a normalized SQL database, and explored through an interactive dashboard.
 
-Domain: Public Health & Epidemiology Skills: Python (Pandas, EDA), SQL (Database Design), Data Visualization (Streamlit/Plotly)
+Domain: Public Health & Epidemiology 
+Skills: Python (Pandas, EDA), SQL (Database Design), Data Visualization (Streamlit/Plotly)
 
 ---
 # ***📌 Project Overview***
@@ -53,10 +54,14 @@ Vaccine schedule data	                         ~8K	                             
 
 ---
 # ***🧹 Data Cleaning Highlights***
-Removed incomplete/junk records (missing country code or year)
-Retained genuine missing coverage values as null rather than imputing false data
-Standardized column names, whitespace, and date types across all tables
-Documented and explained anomalies (e.g. coverage >100% due to WHO's known denominator-estimation quirk) rather than silently deleting them
+
+1. Removed incomplete/junk records (missing country code or year)
+ 
+2. Retained genuine missing coverage values as null rather than imputing false data
+ 
+3. Standardized column names, whitespace, and date types across all tables
+ 
+4. Documented and explained anomalies (e.g. coverage >100% due to WHO's known denominator-estimation quirk) rather than silently deleting them
 
 See docs/Vaccination_Project_Documentation.docx for the full reasoning behind every cleaning decision.
 
@@ -66,7 +71,9 @@ See docs/Vaccination_Project_Documentation.docx for the full reasoning behind ev
 Normalized PostgreSQL schema:
 
 Lookup tables: countries, vaccines, diseases
+
 Fact tables: coverage, incidence, reported_cases, vaccine_introduction, vaccine_schedule
+
 Primary/foreign keys enforced for referential integrity
 
 # ***📈 Dashboard Features***
