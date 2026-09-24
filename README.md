@@ -28,17 +28,29 @@ Streamlit + Plotly — interactive dashboard (filters, KPI cards, trend lines, c
 
 DS-Vaccination-Project/
 ├── data/
-│   ├── raw/                  # Original source Excel files
+
+│   ├── raw/  # Original source Excel files
+
 │   └── cleaned/               # Cleaned CSVs (output of cleaning notebook)
+
 ├── notebooks/
+
 │   ├── eda_analysis.ipynb     # Data profiling, cleaning, and EDA
+
 │   ├── SQL_database.py        # Schema creation / one-off SQL fixes
+
 │   └── load_data.py           # Loads cleaned data into the SQL database
+
 ├── dashboard.py                # Streamlit interactive dashboard
+
 ├── docs/
+
 │   ├── Vaccination_Project_Documentation.docx   # Cleaning decisions, schema, challenges
+
 │   └── Vaccination_Project_Question_Answers.pdf # Answers to all brief questions
+
 ├── requirements.txt
+
 └── README.md
 
 ---
